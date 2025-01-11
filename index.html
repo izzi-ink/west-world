@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westworld Attribute Matrix</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Host Attribute Matrix</h1>
+        
+        <!-- Cognitive Section -->
+        <div class="category-section" style="border: 1px solid rgba(54, 162, 235, 0.3)">
+            <h2 class="category-title">Cognitive Profile</h2>
+            <div class="attributes-container" id="cognitiveAttributes">
+                <!-- Cognitive sliders will be inserted here -->
+            </div>
+            <div>
+                <div class="chart-container">
+                    <canvas id="cognitiveChart"></canvas>
+                </div>
+                <div class="category-analysis" id="cognitiveAnalysis"></div>
+            </div>
+        </div>
+
+        <!-- Social Section -->
+        <div class="category-section" style="border: 1px solid rgba(255, 99, 132, 0.3)">
+            <h2 class="category-title">Social Profile</h2>
+            <div class="attributes-container" id="socialAttributes">
+                <!-- Social sliders will be inserted here -->
+            </div>
+            <div>
+                <div class="chart-container">
+                    <canvas id="socialChart"></canvas>
+                </div>
+                <div class="category-analysis" id="socialAnalysis"></div>
+            </div>
+        </div>
+
+        <!-- Survival Section -->
+        <div class="category-section" style="border: 1px solid rgba(75, 192, 192, 0.3)">
+            <h2 class="category-title">Survival Profile</h2>
+            <div class="attributes-container" id="survivalAttributes">
+                <!-- Survival sliders will be inserted here -->
+            </div>
+            <div>
+                <div class="chart-container">
+                    <canvas id="survivalChart"></canvas>
+                </div>
+                <div class="category-analysis" id="survivalAnalysis"></div>
+            </div>
+        </div>
+
+        <!-- Temperament Section -->
+        <div class="category-section" style="border: 1px solid rgba(255, 206, 86, 0.3)">
+            <h2 class="category-title">Temperament Profile</h2>
+            <div class="attributes-container" id="temperamentAttributes">
+                <!-- Temperament sliders will be inserted here -->
+            </div>
+            <div>
+                <div class="chart-container">
+                    <canvas id="temperamentChart"></canvas>
+                </div>
+                <div class="category-analysis" id="temperamentAnalysis"></div>
+            </div>
+        </div>
+
+        <div class="analysis" id="analysisContainer">
+            <h2>Personality Analysis</h2>
+            <div id="analysisContent"></div>
+        </div>
+    </div>
+
+ 
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>
